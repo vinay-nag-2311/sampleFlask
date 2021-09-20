@@ -9,6 +9,4 @@ WORKDIR /opt/sampleFlask/app/
 
 RUN pip install -r /opt/sampleFlask/requirements.txt
 
-EXPOSE 5000
-
 CMD [ "python", "-m", "flask", "run", "--host=0.0.0.0" ]
