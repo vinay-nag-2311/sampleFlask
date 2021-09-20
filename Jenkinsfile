@@ -6,7 +6,7 @@ node {
   sh "chmod +x -R ./deploy.sh"
 
   stage 'Build'
-  docker.build('flask-test-new')
+  docker.build('flask-image-new')
 
   stage 'Deploy'
   sh './deploy.sh'
